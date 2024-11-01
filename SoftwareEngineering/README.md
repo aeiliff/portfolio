@@ -1,17 +1,17 @@
 # Software Engineering Group Project
 The Software Engineering group project is the capstone course of Loyola University. The entire class works together to create a functional application. This includes building both back-end and front-end as well as configuring build scripts and implementing a database. Our group project focused on building an application similar to YELP, that allowed users to leave reviews for restaurants and perform certain actions on the restaurants and reviews--and for their user accounts. Because this was a group project, I have only included images of the elements that I built/worked on. 
 
-## Image 1: LeaveReviewElement.png
+### Image 1: LeaveReviewElement.png
 This element of the application allowed users to leave a review for a given restaurant. I implemented the leave review button (which was only visible when a user clicked on a restaurant), as well as the ability for the leave review popup to become visible when the button was clicked. Another student built the HTML for the leave review element, which I then turned into the popup. I also implemented the servlet that made this element functional: it involved collecting all the data necessary for creating a new review object, like a user object, and restaurant object to then pass to backend methods that recorded the new information in the database. By making this element functional the application was then able to record the user's new reviews, so that they would show up for the user in their account information session and when clicking to view the reviews for a restaurant. 
 
-## Image 2: EditReviewElement.png
+### Image 2: EditReviewElement.png
 This element allowed for users to view their past review information and edit it if they wished. I implemented the edit review button to show the review popup when clicked. I also implemented the functionality of the edit review popup by getting the user's review information into the form for a specific restaurant. This included showing the user text for a specific restaurant as well as filling in the stars depending on the rating the user gave the restaurant, by using backend methods to request information from the database. The other functionality that had to be implemented for this element was ensuring that the user could edit their review, and then on submission that edited review information replaces the information currently recorded for that review. 
 
-## Image 3: InvalidPasswordElement.png
+### Image 3: InvalidPasswordElement.png
 This element displayed a warning message to the user if the user entered invalid credentials. This involved ensuring that the element only displayed when invalid credentials were entered, as well as utilizing an existing servlet that authenticated users. 
 
-## Image 4: DeleteReviewAndEditReviewButtons.png
+### Image 4: DeleteReviewAndEditReviewButtons.png
 I implemented the edit review button, and another student and I worked together to implement the delete review button and functionality. 
 
-## Other work done:
+### Other work done:
 Throughout this project I also worked on configuring the JSON build tasks and writing some testing criteria early in the project. The first team I was on was Quality Assurance. Because there were not a lot of physical components to the project yet, the testing criteria was just writing out what we thought we should test for based on original design plans. This included writing up a testing sequence for each element, so the next team had something to use when they started to implement the tests into the project. The next team I was on was DevOps. For this team I mainly worked on creating the JSON build tasks for the project, so the group could build the project and view it in the browser more efficiently.
