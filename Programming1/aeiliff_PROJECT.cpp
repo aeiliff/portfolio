@@ -103,7 +103,7 @@ void playerTurn(char pBoard[][cols], char cBoard[][cols]){ //Is called to loop t
             else if(pBoard[y-1][x]=='M') {
                 cout<<"You have already chosen this spot! It's still a miss.\n\n";
             }
-            else if(cBoard[y-1][x]!='~'){
+            else if(cBoard[y-1][x]=='#'){
                 cout<<"It's a hit :)\n";
             pBoard[y-1][x]='H';
             shipSunk(pBoard);
